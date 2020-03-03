@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddIssueComponent } from './components/add-issue/add-issue.component';
 import { EditIssueComponent } from './components/edit-issue/edit-issue.component';
 import { IssueListComponent } from './components/issue-list/issue-list.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IssueListComponent } from './components/issue-list/issue-list.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
