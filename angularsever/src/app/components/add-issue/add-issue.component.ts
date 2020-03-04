@@ -8,33 +8,13 @@ import { Router } from '@angular/router'
   templateUrl: './add-issue.component.html',
   styleUrls: ['./add-issue.component.scss']
 })
+
+
 export class AddIssueComponent implements OnInit {
-
-  issueForm: FormGroup;
-  IssueArray: any = [];
-
-  constructor(public fb: FormBuilder,
-    private ngZone: NgZone,
-    private router: Router,
-    public bugService: BugService
-  ) { }
+  
+  constructor() { }
 
   ngOnInit() {
-    this,this.addIssue()
-  }
-
-  addIssue(){
-    this.issueForm = this.fb.group({
-      issue_name: [''], issue_message: ['']
-    }) 
-
-  }
-
-  submitForm(){
-    this.bugService.CreateBug(this.issueForm.value).subscribe(res => {
-      console.log('Issue added!')
-      this.ngZone.run(() => this.router.navigateByUrl('/issues-list'))
-    });
   }
 
 }
