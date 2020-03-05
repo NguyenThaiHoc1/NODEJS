@@ -1,7 +1,7 @@
 {
   "bugtracking": [
     {
-      "issue_name": "Table Improvement",
+      "issue_name": "Table Improvement 1",
       "issue_message": "Issue tracking is awesome because of collaboration",
       "id": 1
     },
@@ -9,11 +9,6 @@
       "issue_name": "Tooltip Issue",
       "issue_message": "Issue tracking is awesome because of collaboration",
       "id": 2
-    },
-    {
-      "issue_name": "Nguyen Thai Hoc",
-      "issue_message": "hello",
-      "id": 3
     }
   ]
 }

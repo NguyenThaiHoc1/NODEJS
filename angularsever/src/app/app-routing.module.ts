@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddIssueComponent } from './components/add-issue/add-issue.component'
 import { IssueListComponent } from './components/issue-list/issue-list.component'
-
+import { EditIssueComponent } from './components/edit-issue/edit-issue.component'
 const routes: Routes = [
   {
     path: 'home', 
@@ -11,7 +11,11 @@ const routes: Routes = [
   {
     path: 'issues-list', 
     component: IssueListComponent 
-  }
+  },
+  { 
+    path: 'edit-issue/:id', 
+    component: EditIssueComponent 
+  },
 ];
 
 @NgModule({
