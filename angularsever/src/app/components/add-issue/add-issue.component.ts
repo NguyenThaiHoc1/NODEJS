@@ -33,11 +33,12 @@ export class AddIssueComponent implements OnInit {
 
   submitForm() {
     console.log("Hello world")
-    // this.bugService.CreateBug(this.issueForm.value).subscribe(res => {
-    //   console.log('Issue added!')
-    //   console.log(this.issueForm.value)
-    //   this.ngZone.run(() => this.router.navigateByUrl('/issues-list'))
-    // });
+    console.log(this.issueForm.value)
+    this.bugService.CreateBug(this.issueForm.value).subscribe(res => {
+      console.log('Issue added!')
+      console.log(this.issueForm.value)
+      this.ngZone.run(() => this.router.navigateByUrl('/issues-list'))
+    });
   }
 
 }
